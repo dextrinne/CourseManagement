@@ -2,49 +2,49 @@
 
 
 ## Общая структура проекта
-├── 📁 assets/                            # СТАТИЧЕСКИЕ РЕСУРСЫ
-│   ├── 📁 css/
-│   │   ├── styleReports.css
-│   │   ├── styleNotifications.css
-│   │   ├── styleCourses.css
-│   │   └── style.css                    # Основные стили (серые тона)
-│
-├── 📁 config/                          # КОНФИГУРАЦИОННЫЕ ФАЙЛЫ
-│   ├── database.php                    # Настройки подключения к БД
-│   ├── db_course.sql                   # SQL-структура базы данных
-│   ├── test_data.php                   # Тестовые данные для заполнения
-│
-├── 📁 includes/                        # ВКЛЮЧАЕМЫЕ ФАЙЛЫ
-│   ├── header.php                      # Шапка сайта (HTML + PHP)
-│   ├── footer.php                      # Подвал сайта
-│   ├── session.php                     # Управление сессиями
-│   ├── functions.php                   # Общие вспомогательные функции
-│   ├── init.php                        # Инициализация приложения
-│
-├── 📁 pages/                           # ОСНОВНЫЕ СТРАНИЦЫ ПРИЛОЖЕНИЯ
-│   │
-│   ├── 📁 courses/                     # УПРАВЛЕНИЕ КУРСАМИ
-│   │   ├── create.php                  # Создание курса (для преподавателей)
-│   │   ├── view.php                    # Просмотр курса
-│   │   ├── manage.php                  # Управление курсом 
-│   │   ├── update_status.php           # Обновление статуса курса
-│   │
-│   ├── 📁 assignments/                 # ЗАДАНИЯ И РАБОТЫ
-│   │   ├── create.php                  # Создание задания
-│   │   ├── edit.php                    # Редактирование задания
-│   │   ├── submit.php                  # Сдача работы студентом
-│   │   ├── grade.php                   # Проверка работы преподавателем
-│   │
-│   ├── 📁 materials/                   # УЧЕБНЫЕ МАТЕРИАЛЫ
-│   │   ├── upload.php                  # Загрузка материала
-│   │
-│   ├── dashboard.php                   # ЛИЧНЫЙ КАБИНЕТ (главная)
-│   ├── login.php                     
-│   ├── logout.php      
-│   ├── notifications.php               # УВЕДОМЛЕНИЯ
-│   ├── reports.php                     # ОТЧЕТЫ (для преподавателей)
-│
-├── 📁 api/                             # API ENDPOINTS
-│   ├── enroll.php                      # Запись на курсы
-│
-├── index.php                           # ГЛАВНАЯ СТРАНИЦА (редирект)
+├── 📁 assets/                            # СТАТИЧЕСКИЕ РЕСУРСЫ<br>
+│   ├── 📁 css/<br>
+│   │   ├── styleReports.css<br>
+│   │   ├── styleNotifications.css<br>
+│   │   ├── styleCourses.css<br>
+│   │   └── style.css                    # Основные стили (серые тона)<br>
+│<br>
+├── 📁 config/                          # КОНФИГУРАЦИОННЫЕ ФАЙЛЫ<br>
+│   ├── database.php                    # Настройки подключения к БД<br>
+│   ├── db_course.sql                   # SQL-структура базы данных<br>
+│   ├── test_data.php                   # Тестовые данные для заполнения<br>
+│<br>
+├── 📁 includes/                        # ВКЛЮЧАЕМЫЕ ФАЙЛЫ<br>
+│   ├── header.php                      # Шапка сайта (HTML + PHP)<br>
+│   ├── footer.php                      # Подвал сайта<br>
+│   ├── session.php                     # Управление сессиями<br>
+│   ├── functions.php                   # Общие вспомогательные функции<br>
+│   ├── init.php                        # Инициализация приложения<br>
+│<br>
+├── 📁 pages/                           # ОСНОВНЫЕ СТРАНИЦЫ ПРИЛОЖЕНИЯ<br>
+│   │<br>
+│   ├── 📁 courses/                     # УПРАВЛЕНИЕ КУРСАМИ<br>
+│   │   ├── create.php                  # Создание курса (для преподавателей)<br>
+│   │   ├── view.php                    # Просмотр курса<br>
+│   │   ├── manage.php                  # Управление курсом <br>
+│   │   ├── update_status.php           # Обновление статуса курса<br>
+│   │<br>
+│   ├── 📁 assignments/                 # ЗАДАНИЯ И РАБОТЫ<br>
+│   │   ├── create.php                  # Создание задания<br>
+│   │   ├── edit.php                    # Редактирование задания<br>
+│   │   ├── submit.php                  # Сдача работы студентом<br>
+│   │   ├── grade.php                   # Проверка работы преподавателем<br>
+│   │<br>
+│   ├── 📁 materials/                   # УЧЕБНЫЕ МАТЕРИАЛЫ<br>
+│   │   ├── upload.php                  # Загрузка материала<br>
+│   │<br>
+│   ├── dashboard.php                   # ЛИЧНЫЙ КАБИНЕТ (главная)<br>
+│   ├── login.php                     <br>
+│   ├── logout.php      <br>
+│   ├── notifications.php               # УВЕДОМЛЕНИЯ<br>
+│   ├── reports.php                     # ОТЧЕТЫ (для преподавателей)<br>
+│<br>
+├── 📁 api/                             # API ENDPOINTS<br>
+│   ├── enroll.php                      # Запись на курсы<br>
+│<br>
+├── index.php                           # ГЛАВНАЯ СТРАНИЦА (редирект)<br>
