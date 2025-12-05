@@ -1,0 +1,459 @@
+/* Стили для страницы проверки работ */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Заголовок страницы */
+.page-header {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.page-header h2 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitle {
+    color: #718096;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Информация о задании */
+.assignment-info-box {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-label {
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Состояние пустого списка */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state i {
+    color: #cbd5e0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.empty-state h3 {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.empty-state p {
+    color: #718096;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Список работ */
+.submissions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.submission-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.submission-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.submission-item.graded {
+    border-left: 4px solid #38a169;
+}
+
+.submission-item.ungraded {
+    border-left: 4px solid #ecc94b;
+}
+
+.submission-header {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.student-info h4 {
+    color: #2d3748;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.student-email {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.submission-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.submission-date {
+    color: #718096;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-badge {
+    background: #c6f6d5;
+    color: #276749;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-отправлено {
+    background: #e9d8fd;
+    color: #553c9a;
+}
+
+/* Контент работы */
+.submission-content {
+    padding: 1.5rem;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.file-info i {
+    color: #4a5568;
+    font-size: 1.25rem;
+}
+
+.file-link {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.file-link:hover {
+    color: #2d3748;
+    text-decoration: underline;
+}
+
+.student-comment {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #fffaf0;
+    border-left: 3px solid #ecc94b;
+    border-radius: 0 6px 6px 0;
+}
+
+.student-comment strong {
+    color: #975a16;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.student-comment p {
+    color: #744210;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Форма оценки */
+.grading-form {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.score-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-input input {
+    width: 100px;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.score-input input:focus {
+    outline: none;
+    border-color: #4a5568;
+    box-shadow: 0 0 0 3px rgba(74, 85, 104, 0.1);
+}
+
+.max-score {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4a5568;
+    box-shadow: 0 0 0 3px rgba(74, 85, 104, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.graded-date {
+    color: #718096;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Массовые действия */
+.bulk-actions {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.bulk-actions h3 {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.bulk-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Сообщения об успехе/ошибке */
+.message-alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid;
+    animation: slideIn 0.3s ease-out;
+}
+
+.message-alert.success {
+    background: #c6f6d5;
+    border-color: #38a169;
+    color: #276749;
+}
+
+.message-alert.error {
+    background: #fed7d7;
+    border-color: #e53e3e;
+    color: #c53030;
+}
+
+.message-alert i {
+    margin-right: 0.5rem;
+}
+
+/* Анимации */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.submission-item {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem;
+    }
+    
+    .assignment-info-box {
+        padding: 1rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .submission-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .submission-meta {
+        align-items: flex-start;
+    }
+    
+    .score-input {
+        width: 100%;
+    }
+    
+    .score-input input {
+        width: 100%;
+    }
+    
+    .bulk-buttons {
+        flex-direction: column;
+    }
+    
+    .bulk-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 0 0.5rem;
+    }
+    
+    .submission-content {
+        padding: 1rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
