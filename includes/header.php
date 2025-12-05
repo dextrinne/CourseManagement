@@ -22,6 +22,7 @@ $notification_count = count($unread_notifications);
     <link rel="stylesheet" href="/lms/assets/css/styleReports.css">
     <link rel="stylesheet" href="/lms/assets/css/styleNotifications.css">
     <link rel="stylesheet" href="/lms/assets/css/styleCourses.css">
+    <link rel="stylesheet" href="/lms/assets/css/styleGrade.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -61,5 +62,6 @@ $notification_count = count($unread_notifications);
             <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
         </div>
         <?php endif; ?>
+
 
         <main class="main-content"></main>
