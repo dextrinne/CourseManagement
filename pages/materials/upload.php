@@ -60,12 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<div class="page-header">
-    <h2><i class="fas fa-upload"></i> Загрузка учебного материала</h2>
-    <p class="subtitle">Курс: <?php echo htmlspecialchars($course['title']); ?></p>
-    <a href="../courses/view.php?id=<?php echo $course_id; ?>" class="btn btn-secondary">← Назад к курсу</a>
-</div>
-
 <div class="form-container">
     <form method="POST" action="" enctype="multipart/form-data">
         <div class="form-group">
@@ -92,5 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </form>
 </div>
+
 
 <?php require_once '../../includes/footer.php'; ?>
