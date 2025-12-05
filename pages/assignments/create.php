@@ -56,12 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<div class="page-header">
-    <h2><i class="fas fa-plus-circle"></i> Создание задания</h2>
-    <p class="subtitle">Курс: <?php echo htmlspecialchars($course['title']); ?></p>
-    <a href="../courses/view.php?id=<?php echo $course_id; ?>" class="btn btn-secondary">Назад к курсу</a>
-</div>
-
 <div class="form-container">
     <form method="POST" action="">
         <div class="form-group">
@@ -108,5 +102,6 @@ tomorrow.setHours(23, 59);
 const tomorrowFormatted = tomorrow.toISOString().slice(0, 16);
 document.getElementById('deadline').value = tomorrowFormatted;
 </script>
+
 
 <?php require_once '../../includes/footer.php'; ?>
